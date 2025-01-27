@@ -35,6 +35,10 @@
   @include lt-txt-size("large");
 }
 
+.lt-txt-x-large {
+  @include lt-txt-size("x-large");
+}
+
 .lt-txt-letter-spacing-default {
   .lt-txt {
     @include lt-font-size($line-height: 1.3, $font-size: 14px);

@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
-import { LinkThreeApiComponent } from './link-three-api.component';
-
-
+import {PayloadService} from './service/payload-service';
 
 @NgModule({
   declarations: [
-    LinkThreeApiComponent
   ],
   imports: [
   ],
   exports: [
-    LinkThreeApiComponent
+  ],
+  providers: [
+    PayloadService
   ]
 })
 export class LinkThreeApiModule { }

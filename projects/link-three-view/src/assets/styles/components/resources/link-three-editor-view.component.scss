@@ -1,0 +1,67 @@
+.link-three-editor-view {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 800px;
+  height: 100%;
+  padding: 30px;
+
+  .link-three-editor-view-add-button {
+    border: 2px solid var(--lt-deep-purple);
+  }
+}
+
+.link-three-editor-view-add-button {
+  height: 46px;
+  border-radius: 10px;
+  width: 100%;
+
+  &:hover {
+    background-color: var(--lt-pale-purple);
+  }
+}
+
+.link-three-editor-view-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65%;
+  border-radius: 10px;
+}
+
+.link-three-editor-view-cards {
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  border-radius: 10px;
+  background-color: var(--lt-deep-purple);
+  overflow-y: auto;
+  gap: 10px;
+}
+
+.link-three-editor-view-items-very-light-gray {
+  background-color: var(--lt-very-light-gray);
+}
+
+.link-three-editor-view-description {
+  text-align: center;
+}
+
+.link-three-editor-view-footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: end;
+
+  .lt-link-1 {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}
+
+.link-three-editor-view-cards-white {
+  background-color: var(--lt-white);
+}

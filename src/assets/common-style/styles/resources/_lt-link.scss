@@ -12,3 +12,18 @@
     cursor: pointer;
   }
 }
+
+.lt-link-1 {
+  @extend %lt-btn-base-structure;
+
+  @include lt-txt-font-family();
+  @include lt-font-size($line-height: 1.3, $font-size: 13px);
+  @include lt-link-visual(var(--lt-white));
+  background-color: var(--lt-deep-purple);
+  border-color: transparent;
+  padding: 0 4px;
+
+  .lt-txt {
+    cursor: pointer;
+  }
+}

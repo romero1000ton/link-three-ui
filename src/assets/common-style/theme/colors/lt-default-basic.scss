@@ -43,4 +43,22 @@
   --lt-red-s: 100%;
   --lt-red-l: 62%;
   --lt-red: hsl(var(--lt-red-h), var(--lt-red-s), var(--lt-red-l));
+
+  --lt-git-h: 0;
+  --lt-git-s: 0%;
+  --lt-git-l: 10%;
+  --lt-git: hsl(var(--lt-git-h), var(--lt-git-s), var(--lt-git-l-l));
+
+  --lt-fe-mentor: hsl(0, 0, 100);
+  --lt-twitter: hsl(198, 79, 59);
+  --lt-linked-in: hsl(223, 100%, 59%);
+  --lt-youtube: hsla(0, 84%, 58%, 1);
+  --lt-facebook: hsla(227, 66%, 41%, 1);
+  --lt-twitch: hsla(313, 84%, 59%, 1);
+  --lt-dev-to: hsla(0, 0%, 20%, 1);
+  --lt-code-wars: hsla(331, 68%, 32%, 1);
+  --lt-code-camp: hsla(252, 50%, 27%, 1);
+  --lt-git-lab: hsla(11, 83%, 53%, 1);
+  --lt-hash-node: hsla(227, 98%, 42%, 1);
+  --lt-stack-overflow: hsla(29, 100%, 46%, 1);
 }

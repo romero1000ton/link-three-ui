@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {AngularFireModule} from '@angular/fire';
 import {BrowserModule} from '@angular/platform-browser';
+import {LinkThreeApiModule} from 'link-three-api';
 import {environment} from '../environments/environment';
 
 import {AppComponent} from './app.component';
@@ -14,7 +15,8 @@ import {AppRoutingModule} from './routes/app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    LinkThreeApiModule
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]

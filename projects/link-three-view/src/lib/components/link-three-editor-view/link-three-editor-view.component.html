@@ -1,0 +1,35 @@
+<article class="link-three-editor-view">
+  <label class="lt-txt lt-txt-x-large lt-txt-bold link-three-editor-view-title">Customize you links</label>
+
+  <label class="lt-txt lt-txt-small link-three-editor-view-title">Add/edit/remove links below and then share all your profiles with the
+                                                                  world!</label>
+
+  <button class="lt-link link-three-editor-view-add-button" (click)="onCreateTask()">+ Add new link</button>
+
+  <section class="link-three-editor-view-items link-three-editor-view-items-very-light-gray"
+           *ngIf="!linkCardsWrapper?.cards ; else linkCards">
+    <img class="link-three-editor-view-icon"
+         src="assets/link-three-view/edit-started.svg"
+         alt="edit-started"/>
+
+    <label class="lt-txt lt-txt-x-large lt-txt-bold link-three-editor-view-title">Let's get you started</label>
+
+    <label class="lt-txt lt-txt-small link-three-editor-view-description">Use the “Add new link” button to get started. Once you have more
+                                                                          than one link, you
+                                                                          can reorder and edit them. We’re here to help you share your
+                                                                          profiles with
+                                                                          everyone!</label>
+  </section>
+
+  <ng-template #linkCards>
+    <section class="link-three-editor-view-cards link-three-editor-view-cards-white">
+      <ng-container *ngFor="let card of linkCardsWrapper.cards">
+        <link-three-card-view [card]="card"></link-three-card-view>
+      </ng-container>
+    </section>
+  </ng-template>
+
+  <section class="link-three-editor-view-footer">
+    <button class="lt-link-1">Save</button>
+  </section>
+</article>

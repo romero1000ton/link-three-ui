@@ -1,27 +1,54 @@
-# LinkThreeUi
+# Libraries Architecture
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+Link C4 basic: https://drive.google.com/file/d/1TPw_Z7mDZeWoTKk1pioEdFk0o7wJWDKp/view?usp=sharing 
 
-## Development server
+This project has the next library
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+I use clean architecture and layered architecture see my UML image added in root project
 
-## Code scaffolding
+- @link-three-services/link-three-api
+- @link-three-services/link-three-core
+- @link-three-services/link-three-view
+- @link-three-services/link-three
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+you can run watchers
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-gulp watch-link-three-api:angular
+-gulp watch-link-three-view:angular
+-gulp watch-link-three-core:angular
+-gulp watch-link-three:angular
 
-## Running unit tests
+This way I have separated the logic from the view and it is also open to other integrations thanks to smart and dumb components.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# SCSS
 
-## Running end-to-end tests
+A basic scss structure was created using defined mixins and themes as well as colours and variations.
+review (common-styles)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+As you can see in my diagram I am using Backend as service (Bass) to simulate a BE and not using storages, with that I can log in and register users as many times as I need.
 
-## Further help
+current user created to login:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+email: admin@yopmail.com
+password: sesame
+
+# Login Logout
+
+As you can see in my diagram I am using Backend as service (Bass) to simulate a BE and not using storages, with that I can log in and register users as many times as I need.
+
+current user created to login:
+
+email: admin@yopmail.com
+password: sesame
+
+
+I still need to configure the guards but with the Sesion Service it will be easy to do it.
+
+#What is missing
+
+I have a robust and extensible framework and only require the following to complete the functional requirements.
+
+- Activate Guards (I have the guards but I need to use the session service to control them.)
+- state management (I already have everything configured but I need to create a simple state that may not even require effects).
+

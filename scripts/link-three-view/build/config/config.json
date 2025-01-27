@@ -4,10 +4,10 @@
   "module": "link-three.view",
   "folder": {
     "project": {
-      "path": "./projects/link-three/link-three-view",
+      "path": "./projects/link-three-view",
       "assets": {
-        "scss": "./projects/link-three/link-three-view/src/assets/styles",
-        "images": "./projects/link-three/link-three-view/src/assets/images"
+        "scss": "./projects/link-three-view/src/assets/styles",
+        "images": "./projects/link-three-view/src/assets/images"
       }
     },
     "target": {

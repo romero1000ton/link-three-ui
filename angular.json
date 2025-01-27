@@ -28,12 +28,18 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./projects/link-three-view/src/assets/images/",
+                "output": "./assets/link-three-view/"
+              }
             ],
             "styles": [
               "src/styles.scss",
               "src/assets/styles/link-three-styles.scss",
-              "src/assets/common-style/lt-styles.scss"
+              "src/assets/common-style/lt-styles.scss",
+              "projects/link-three-view/src/assets/styles/link-three-view-styles.scss"
             ],
             "scripts": []
           },
