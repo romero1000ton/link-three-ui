@@ -1,0 +1,24 @@
+{
+  "package": "@link-three-services/link-three-view",
+  "library": "link-three-view",
+  "module": "link-three.view",
+  "folder": {
+    "project": {
+      "path": "./projects/link-three/link-three-view",
+      "assets": {
+        "scss": "./projects/link-three/link-three-view/src/assets/styles",
+        "images": "./projects/link-three/link-three-view/src/assets/images"
+      }
+    },
+    "target": {
+      "css": "./target/link-three-view/css",
+      "distCss": "./target/link-three-view/dist-css"
+    },
+    "dist": {
+      "library": {
+        "styles": "./dist/link-three-view/styles",
+        "images": "./dist/link-three-view/images"
+      }
+    }
+  }
+}

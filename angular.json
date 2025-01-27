@@ -31,7 +31,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/styles/link-three-styles.scss",
+              "src/assets/common-style/lt-styles.scss"
             ],
             "scripts": []
           },
@@ -102,6 +104,130 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "link-three": {
+      "projectType": "library",
+      "root": "projects/link-three",
+      "sourceRoot": "projects/link-three/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/link-three/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/link-three/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/link-three/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/link-three/src/test.ts",
+            "tsConfig": "projects/link-three/tsconfig.spec.json",
+            "karmaConfig": "projects/link-three/karma.conf.js"
+          }
+        }
+      }
+    },
+    "link-three-api": {
+      "projectType": "library",
+      "root": "projects/link-three-api",
+      "sourceRoot": "projects/link-three-api/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/link-three-api/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/link-three-api/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/link-three-api/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/link-three-api/src/test.ts",
+            "tsConfig": "projects/link-three-api/tsconfig.spec.json",
+            "karmaConfig": "projects/link-three-api/karma.conf.js"
+          }
+        }
+      }
+    },
+    "link-three-view": {
+      "projectType": "library",
+      "root": "projects/link-three-view",
+      "sourceRoot": "projects/link-three-view/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/link-three-view/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/link-three-view/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/link-three-view/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/link-three-view/src/test.ts",
+            "tsConfig": "projects/link-three-view/tsconfig.spec.json",
+            "karmaConfig": "projects/link-three-view/karma.conf.js"
+          }
+        }
+      }
+    },
+    "link-three-core": {
+      "projectType": "library",
+      "root": "projects/link-three-core",
+      "sourceRoot": "projects/link-three-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/link-three-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/link-three-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/link-three-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/link-three-core/src/test.ts",
+            "tsConfig": "projects/link-three-core/tsconfig.spec.json",
+            "karmaConfig": "projects/link-three-core/karma.conf.js"
           }
         }
       }

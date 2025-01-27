@@ -9,6 +9,24 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "link-three": [
+        "dist/link-three/link-three",
+        "dist/link-three"
+      ],
+      "link-three-api": [
+        "dist/link-three-api/link-three-api",
+        "dist/link-three-api"
+      ],
+      "link-three-core": [
+        "dist/link-three-core/link-three-core",
+        "dist/link-three-core"
+      ],
+      "link-three-view": [
+        "dist/link-three-view/link-three-view",
+        "dist/link-three-view"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,

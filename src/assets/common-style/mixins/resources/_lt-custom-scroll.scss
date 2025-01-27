@@ -1,0 +1,47 @@
+%lt-custom-scroll-firefox {
+  scrollbar-color: var(--lt-deep-purple) transparent;
+  scrollbar-width: thin;
+}
+
+%lt-custom-scroll-webkit::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+%lt-custom-scroll-webkit::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+%lt-custom-scroll-webkit::-webkit-scrollbar-thumb {
+  background-color: var(--lt-deep-purple);
+  border: 6px solid transparent;
+  border-radius: 6px;
+}
+
+%lt-custom-scroll-hidden-firefox {
+  scrollbar-color: var(--lt-deep-purple) transparent;
+  scrollbar-width: none;
+}
+
+%lt-custom-scroll-hidden-webkit::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+%lt-custom-scroll-hidden-webkit::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+%lt-custom-scroll-hidden-webkit::-webkit-scrollbar-thumb {
+  background-color: var(--lt-deep-purple);
+  border: 6px solid transparent;
+  border-radius: 6px;
+}
+
+%lt-custom-scroll-hover:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+%lt-custom-scroll-hover::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}

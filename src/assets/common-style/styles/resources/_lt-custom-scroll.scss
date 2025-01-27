@@ -1,0 +1,15 @@
+.lt-custom-scroll {
+  @extend %lt-custom-scroll-firefox;
+  @extend %lt-custom-scroll-webkit;
+}
+
+.lt-custom-scroll-hidden {
+  @extend %lt-custom-scroll-hidden-firefox;
+  @extend %lt-custom-scroll-hidden-webkit;
+}
+
+.lt-custom-scroll-hover {
+  @extend %lt-custom-scroll-firefox;
+  @extend %lt-custom-scroll-webkit;
+  @extend %lt-custom-scroll-hover;
+}

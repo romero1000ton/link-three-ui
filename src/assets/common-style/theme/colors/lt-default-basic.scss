@@ -1,0 +1,46 @@
+:root {
+  --lt-deep-purple-h: 255;
+  --lt-deep-purple-s: 100%;
+  --lt-deep-purple-l: 60%;
+  --lt-deep-purple: hsl(var(--lt-deep-purple-h), var(--lt-deep-purple-s), var(--lt-deep-purple-l));
+
+  --lt-light-purple-h: 253;
+  --lt-light-purple-s: 100%;
+  --lt-light-purple-l: 84%;
+  --lt-light-purple: hsl(var(--lt-light-purple-h), var(--lt-light-purple-s), var(--lt-light-purple-l));
+
+  --lt-pale-purple-h: 249;
+  --lt-pale-purple-s: 100%;
+  --lt-pale-purple-l: 95%;
+  --lt-pale-purple: hsl(var(--lt-pale-purple-h), var(--lt-pale-purple-s), var(--lt-pale-purple-l));
+
+  --lt-dark-gray-h: 0;
+  --lt-dark-gray-s: 0%;
+  --lt-dark-gray-l: 20%;
+  --lt-dark-gray: hsl(var(--lt-dark-gray-h), var(--lt-dark-gray-s), var(--lt-dark-gray-l));
+
+  --lt-medium-gray-h: 0;
+  --lt-medium-gray-s: 0%;
+  --lt-medium-gray-l: 45%;
+  --lt-medium-gray: hsl(var(--lt-medium-gray-h), var(--lt-medium-gray-s), var(--lt-medium-gray-l));
+
+  --lt-light-gray-h: 0;
+  --lt-light-gray-s: 0%;
+  --lt-light-gray-l: 85%;
+  --lt-light-gray: hsl(var(--lt-light-gray-h), var(--lt-light-gray-s), var(--lt-light-gray-l));
+
+  --lt-very-light-gray-h: 0;
+  --lt-very-light-gray-s: 0%;
+  --lt-very-light-gray-l: 98%;
+  --lt-very-light-gray: hsl(var(--lt-very-light-gray-h), var(--lt-very-light-gray-s), var(--lt-very-light-gray-l));
+
+  --lt-white-h: 0;
+  --lt-white-s: 0%;
+  --lt-white-l: 100%;
+  --lt-white: hsl(var(--lt-white-h), var(--lt-white-s), var(--lt-white-l));
+
+  --lt-red-h: 0;
+  --lt-red-s: 100%;
+  --lt-red-l: 62%;
+  --lt-red: hsl(var(--lt-red-h), var(--lt-red-s), var(--lt-red-l));
+}

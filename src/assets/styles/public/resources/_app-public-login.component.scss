@@ -1,0 +1,112 @@
+.app-public-login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app-public-login-very-light-gray {
+  background-color: var(--lt-very-light-gray);
+}
+
+.app-public-login-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 476px;
+  height: fit-content;
+  border-radius: 20px;
+  gap: 20px;
+  padding: 30px;
+
+  .app-public-login-container-header {
+    font-size: 32px;
+  }
+
+  .app-public-login-container-header-second {
+    color: var(--lt-medium-gray);
+  }
+}
+
+.app-public-login-container-white {
+  background-color: var(--lt-white);
+}
+
+.app-public-login-container-form {
+  width: 100%;
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.app-public-login-container-form-email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .app-public-login-container-form-field-error {
+    color: var(--lt-red);
+  }
+}
+
+.app-public-login-container-form-password {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .app-public-login-container-form-field-error {
+    color: var(--lt-red);
+  }
+}
+
+.app-public-login-container-form-login-button {
+  width: 100%;
+  height: 46px;
+  border-radius: 5px;
+  color: var(--lt-white);
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+}
+
+.app-public-login-container-form-login-button-deep-purple {
+  background-color: var(--lt-deep-purple);
+}
+
+.app-public-login-container-form-login-button-disabled {
+  background-color: var(--lt-light-purple);
+}
+
+.app-public-login-container-form-field {
+  box-sizing: border-box;
+  padding: 2px;
+  display: flex;
+  height: 48px;
+  border-radius: 5px;
+  border: 2px solid var(--lt-light-gray);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-public-login-container-form-field-box-error {
+  border: 2px solid var(--lt-red);
+}
+
+.app-public-login-container-form-field-input {
+  border: none;
+  outline: none;
+  width: 65%;
+  height: 100%;
+}
+
+.app-public-login-container-footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}

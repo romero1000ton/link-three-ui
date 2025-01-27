@@ -1,0 +1,85 @@
+<article class="app-public-create-account app-public-create-account-very-light-gray">
+  <img class="app-public-create-account-logo"
+       src="assets/images/logo.svg"
+       alt="app-navigation-logo"/>
+
+  <section class="app-public-create-account-container app-public-create-account-container-white">
+    <label class="app-public-create-account-container-header lt-txt lt-txt-bold">Create Account</label>
+
+    <label class="lt-txt lt-txt-large app-public-create-account-container-header-second">{{TITLE_CREATE_ACCOUNT}}</label>
+
+    <form class="app-public-create-account-container-form"
+          [formGroup]="createAccountForm"
+          (ngSubmit)="onSubmit()">
+      <section class="app-public-create-account-container-form-email">
+        <label class="lt-txt"
+               for="email">Email address</label>
+
+        <section class="app-public-create-account-container-form-field"
+                 [ngClass]="{'app-public-create-account-container-form-field-box-error': createAccountForm.get(EMAIL)?.invalid && createAccountForm.get(EMAIL)?.touched}">
+          <input class="app-public-create-account-container-form-field-input"
+                 id="email"
+                 autocomplete="email"
+                 formControlName="email"
+                 placeholder="e.g.alex@email.com"
+                 type="email"/>
+
+          <label *ngIf="createAccountForm.get(EMAIL)?.invalid && createAccountForm.get(EMAIL)?.touched"
+                 class="lt-txt app-public-create-account-container-form-field-error">{{EMAIL_ERROR}}</label>
+        </section>
+      </section>
+
+      <section class="app-public-create-account-container-form-password">
+        <label class="lt-txt"
+               for="password">Create password</label>
+
+        <section class="app-public-create-account-container-form-field"
+                 [ngClass]="{'app-public-create-account-container-form-field-box-error': createAccountForm.get(PASSWORD)?.invalid && createAccountForm.get(PASSWORD)?.touched}">
+          <input class="app-public-create-account-container-form-field-input"
+                 id="password"
+                 autocomplete="current-password"
+                 formControlName="password"
+                 placeholder="Enter your password"
+                 type="password"/>
+
+          <label *ngIf="createAccountForm.get(PASSWORD)?.invalid && createAccountForm.get(PASSWORD)?.touched"
+                 class="lt-txt app-public-create-account-container-form-field-error">{{PASSWORD_ERROR}}</label>
+        </section>
+      </section>
+
+      <section class="app-public-create-account-container-form-password">
+        <label class="lt-txt"
+               for="confirmPassword">Confirm password</label>
+
+        <section class="app-public-create-account-container-form-field"
+                 [ngClass]="{'app-public-create-account-container-form-field-box-error': createAccountForm.get(CONFIRM_PASSWORD)?.invalid && createAccountForm.get(CONFIRM_PASSWORD)?.touched}">
+          <input class="app-public-create-account-container-form-field-input"
+                 id="confirmPassword"
+                 autocomplete="current-password"
+                 formControlName="confirmPassword"
+                 placeholder="At least 8 characters"
+                 type="password"/>
+
+          <label *ngIf="createAccountForm.get(CONFIRM_PASSWORD)?.invalid && createAccountForm.get(CONFIRM_PASSWORD)?.touched"
+                 class="lt-txt app-public-create-account-container-form-field-error">{{PASSWORD_ERROR}}</label>
+        </section>
+      </section>
+
+      <label class="lt-txt lt-txt-s-medium">Password must contain at least 8 characters</label>
+
+      <button class="app-public-create-account-container-form-create-account-button app-public-create-account-container-form-create-account-button-deep-purple"
+              type="submit"
+              [ngClass]="{'app-public-create-account-container-form-create-account-button-disabled': createAccountForm.invalid}"
+              [disabled]="createAccountForm.invalid">Create new account
+      </button>
+    </form>
+
+    <section class="app-public-create-account-container-footer">
+      <label class="lt-txt lt-txt-medium">Already have an account?</label>
+
+      <button class="lt-txt-medium lt-link"
+              (click)="navigateToLogin()">Login
+      </button>
+    </section>
+  </section>
+</article>

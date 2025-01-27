@@ -1,0 +1,65 @@
+<article class="app-public-login app-public-login-very-light-gray">
+  <img class="app-public-login"
+       src="assets/images/logo.svg"
+       alt="app-public-login"/>
+
+  <section class="app-public-login-container app-public-login-container-white">
+    <label class="app-public-login-container-header lt-txt lt-txt-bold">Login</label>
+
+    <label class="lt-txt lt-txt-large app-public-login-container-header-second">{{TITLE_LOGIN}}</label>
+
+    <form class="app-public-login-container-form"
+          [formGroup]="loginForm"
+          (ngSubmit)="onSubmit()">
+      <section class="app-public-login-container-form-email">
+        <label class="lt-txt"
+               for="email">Email address</label>
+
+        <section class="app-public-login-container-form-field"
+                 [ngClass]="{'app-public-login-container-form-field-box-error': loginForm.get(EMAIL)?.invalid && loginForm.get(EMAIL)?.touched}">
+          <input class="app-public-login-container-form-field-input"
+                 id="email"
+                 autocomplete="email"
+                 formControlName="email"
+                 placeholder="e.g.alex@email.com"
+                 type="email"/>
+
+          <label *ngIf="loginForm.get(EMAIL)?.invalid && loginForm.get(EMAIL)?.touched"
+                 class="lt-txt app-public-login-container-form-field-error">{{EMAIL_ERROR}}</label>
+        </section>
+      </section>
+
+      <section class="app-public-login-container-form-password">
+        <label class="lt-txt"
+               for="password">Password</label>
+
+        <section class="app-public-login-container-form-field"
+                 [ngClass]="{'app-public-login-container-form-field-box-error': loginForm.get(PASSWORD)?.invalid && loginForm.get(PASSWORD)?.touched}">
+          <input class="app-public-login-container-form-field-input"
+                 id="password"
+                 autocomplete="current-password"
+                 formControlName="password"
+                 placeholder="Enter your password"
+                 type="password"/>
+
+          <label *ngIf="loginForm.get(PASSWORD)?.invalid && loginForm.get(PASSWORD)?.touched"
+                 class="lt-txt app-public-login-container-form-field-error">{{PASSWORD_ERROR}}</label>
+        </section>
+      </section>
+
+      <button class="app-public-login-container-form-login-button app-public-login-container-form-login-button-deep-purple"
+              type="submit"
+              [ngClass]="{'app-public-login-container-form-login-button-disabled': loginForm.invalid}"
+              [disabled]="loginForm.invalid">Login
+      </button>
+    </form>
+
+    <section class="app-public-login-container-footer">
+      <label class="lt-txt lt-txt-medium">Don't have an account?</label>
+
+      <button class="lt-txt-medium lt-link"
+              (click)="navigateToCreateAccount()">Create account
+      </button>
+    </section>
+  </section>
+</article>

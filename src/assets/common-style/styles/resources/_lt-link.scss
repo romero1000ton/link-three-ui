@@ -1,0 +1,14 @@
+.lt-link {
+  @extend %lt-btn-base-structure;
+
+  @include lt-txt-font-family();
+  @include lt-font-size($line-height: 1.3, $font-size: 13px);
+  @include lt-link-visual();
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0 4px;
+
+  .lt-txt {
+    cursor: pointer;
+  }
+}
